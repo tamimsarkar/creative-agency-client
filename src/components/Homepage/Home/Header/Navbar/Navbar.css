@@ -1,0 +1,16 @@
+.navbar-brand > img{
+    height: 50px;
+}
+.nav-link {
+    font-size:14px
+}
+.nav-link:focus{
+    border-bottom: 2px solid green;
+  
+}
+.login-btn {
+    background-color: #111430;
+    color: #ffffff !important;
+    padding:5px 20px !important;
+    border-radius: 4px;
+}

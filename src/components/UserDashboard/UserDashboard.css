@@ -1,0 +1,43 @@
+.user__dashboard {
+    display: flex;
+    background-color: #F3F1FF;
+    height: 100vh;
+}
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    flex: 0.2;
+    text-align: center;
+    background-color: #fff;
+}
+.dashboard {
+    display: flex;
+    flex: 1;
+}
+.dashboard__logo {
+    height: 50px;
+    margin-top: 20px;
+}
+.logo_area {
+    padding: 10px 20px;
+}
+.dashboard__logo {
+    height: 50px;
+}
+.sidebar__item {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-top: 60px;
+    margin-left: 40px;
+}
+.side__item {
+    color: #111;
+    text-decoration:  none !important;
+    font-weight: 500;
+    
+}
+.side__item:hover,.side__item:focus {
+    color: #009444;
+   
+}

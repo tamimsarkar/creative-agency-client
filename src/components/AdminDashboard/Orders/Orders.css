@@ -1,0 +1,51 @@
+.orders {
+    height: 100vh;
+    position: relative;
+}
+.form__data {
+   position: absolute;
+   top: 50px;
+   left: 30px;
+}
+.form__data > form {
+    display: flex;
+    flex-direction: column;
+}
+
+form > input  {
+    width:350px;
+    height: 40px;
+    margin: 10px 0px;
+    border: none;
+    font-size:13px;
+    padding: 6px 7px;
+    border-radius: 4px;
+    outline-width: 0;
+}
+form > textarea {
+    height: 100px !important;
+    width:350px;
+    margin: 10px 0px;
+    border: none;
+    font-size:13px;
+    padding: 6px 7px;
+    border-radius: 4px;
+    outline-width: 0;
+}
+.pricing {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.pricing > input {
+    width:100px;
+    outline-width: 0;
+}
+.pricing > button {
+    color: green;
+    background-color: #DEFFED;
+    border: 1px solid green;
+    padding: 3px 17px;
+    border-radius:4px;
+   
+}

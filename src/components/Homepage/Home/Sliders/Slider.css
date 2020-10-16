@@ -1,0 +1,14 @@
+.carousel {
+    background-color: #111430;
+    padding: 50px;
+}
+.slide {
+   background-color: #111430;
+   
+  
+}
+ .slide__img {
+     height: 300px;
+     margin: 0 30px;
+   
+ }

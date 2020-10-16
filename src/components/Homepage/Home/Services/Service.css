@@ -1,0 +1,24 @@
+.service {
+    box-shadow: 1px 2px 20px solid lightgrey !important;
+    transition: 100s ease-in;
+    padding: 10px;
+border-radius: 5px;
+
+  
+}
+
+
+@keyframes example {
+    0%   {background-color: transparent;}
+    100% {background-color: rgb(11, 160, 98);}
+  }
+.service:hover {
+animation-name: example;
+animation-duration:2s;
+
+text-decoration: none;
+
+}
+.service:hover h1{
+    color: #111;
+}

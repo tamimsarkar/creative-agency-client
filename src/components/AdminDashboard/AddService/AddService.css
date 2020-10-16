@@ -1,0 +1,31 @@
+
+
+.form {
+   background-color: #fff;
+}
+
+textarea{
+    border: 1px solid lightgrey !important;
+}
+
+small{
+    font-weight: 500;
+}
+.add__service {
+    width: 100px;
+}
+
+.custom_button {
+    background-color: #009444;
+    color: #fff;
+    width: 120px;
+}
+input {
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    padding: 2px 5px;
+}
+
+.file {
+    border: none !important;
+}

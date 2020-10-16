@@ -1,0 +1,22 @@
+.logo {
+    height:70px
+}
+.google__sign__in {
+    height: 36px;
+    display: flex;
+    border: 1px solid lightgrey;
+    border-radius: 999px;
+    justify-content:center;
+    align-items:center;
+}
+.google__sign__in > img {
+    height:30px;
+}
+.button {
+    outline-width: 0 !important;
+}
+.login_area {
+    height: 380px;
+    display:flex;flex-direction:column;
+    justify-content:center;
+}

@@ -1,0 +1,30 @@
+.contact {
+    background-color: #FBD062;
+    padding: 50px;
+}
+.contact__form {
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    align-items: left
+}
+.contact__form > input {
+    outline-width: 0;
+    border: none;
+    margin: 6px 0;
+    padding: 10px;
+    border-radius: 4px;
+}
+.message__input{
+    height:100px
+}
+.send__button {
+    border: 1px solid;
+    width: 100px;
+    margin:7px;
+    background-color: #111430;
+    color: #fff;
+}
+.send__button:hover{
+    color: #fff;
+}
