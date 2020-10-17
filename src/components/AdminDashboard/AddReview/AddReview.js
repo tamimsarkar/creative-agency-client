@@ -32,7 +32,7 @@ const AddReview = () => {
         formData.append('photo', info.photo);
         formData.append('description', info.description);
        
-        fetch('http://localhost:4000/addReview', {
+        fetch('https://fast-falls-01927.herokuapp.com/addReview', {
             method: 'POST',
             body: formData
         })
@@ -51,16 +51,24 @@ const AddReview = () => {
     }
     return (
 
+      
     <div className="container">
-        <h3 className="m-3">Give a review</h3>
-        <form className="d-flex flex-column m-4" onSubmit={handleSubmit}>
-                    <input onBlur={handleBlur} type="text" defaultValue={loggedInUser.name}  name="name" placeholder="Enter Name" />
-                    <input onBlur={handleBlur} type="text" name="companyName" placeholder="Your Company Name.designation" />
-                    <input onBlur={handleBlur} style={{display:'none'}} type="text" defaultValue={loggedInUser.photo} className="form-control" name="photo"  />
-                    <textarea onBlur={handleBlur} type="text"  name="description" placeholder="Description" height="100px" placeholder="Description" />
-                   
-                    <button style={{width:'150px',backgroundColor:'#111430'}} type="submit" className="btn btn-success">Send</button>   
-                    </form>
+        {
+            loggedInUser.name ?   <div>
+            <h3 className="m-3">Give a review</h3>
+             <form className="d-flex flex-column m-4" onSubmit={handleSubmit}>
+                         <input onBlur={handleBlur} type="text" defaultValue={loggedInUser.name}  name="name" placeholder="Enter Name" />
+                         <input onBlur={handleBlur} type="text" name="companyName" placeholder="Your Company Name.designation" />
+                         <input onBlur={handleBlur} style={{display:'none'}} type="text" defaultValue={loggedInUser.photo} className="form-control" name="photo"  />
+                         <textarea onBlur={handleBlur} type="text"  name="description" placeholder="Description" height="100px" placeholder="Description" />
+                        
+                         <button style={{width:'150px',backgroundColor:'#111430'}} type="submit" className="btn btn-success">Send</button>   
+                         </form>
+            </div> :
+            <h3>Please Log in First...</h3>
+        }
+     
+      
     </div>
 
 

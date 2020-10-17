@@ -25,7 +25,7 @@ const ServiceList = () => {
         formData.append('service', info.service);
         formData.append('description', info.description);
 
-        fetch('http://localhost:4000/addService', {
+        fetch('https://fast-falls-01927.herokuapp.com/addService', {
             method: 'POST',
             body: formData
         })

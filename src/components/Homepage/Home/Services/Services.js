@@ -4,7 +4,7 @@ import Service from './Service';
 const Services = () => {
     const [services, setServices] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:4000/services')
+        fetch('https://fast-falls-01927.herokuapp.com/services')
             .then(res => res.json())
             .then(data => setServices(data))
 
@@ -20,7 +20,7 @@ const Services = () => {
                                 {
                                     services.map(service => (
 
-                                        <div className=" mt-2 mb-2" key={service._id} className="col-md-4">
+                                        <div className=" mt-2 mb-2 col-md-4" key={service._id} >
                                             <Service services={service} />
                                         </div>
                                     ))

@@ -28,6 +28,9 @@ const Navbar = () => {
       <li className="nav-item">
         <Link className="nav-link login-btn" to='/login'>Login</Link>
       </li>
+      <li className="nav-item">
+        <Link className="nav-link login-btn ml-2" to='/admin-dashboard'>Admin</Link>
+      </li>
      
    
     </ul>

@@ -42,10 +42,32 @@ form > textarea {
     outline-width: 0;
 }
 .pricing > button {
-    color: green;
+    color: #009444;
     background-color: #DEFFED;
-    border: 1px solid green;
+    border: 1px solid #009444;
     padding: 3px 17px;
     border-radius:4px;
    
+}
+.custom-file-upload {
+    border: 1px solid #009444;
+    display: inline-block;
+    color: #009444;
+    font-size: 13px;
+    padding: 9px 12px;
+    cursor: pointer;
+    border-radius:5px;
+    font-weight: 500
+}
+.submit {
+    background-color: #111430;
+    border: 2px solid #111430;
+    width: 140px;
+    
+    color: #fff;
+}
+.submit:hover {
+    background-color: transparent;
+    font-weight: 500
+
 }

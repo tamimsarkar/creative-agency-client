@@ -22,7 +22,7 @@ const ContactForm = () => {
                             <input type="email" placeholder="Your Email Address" name="exampleRequired" ref={register({ required: true })} />
                             {/* errors will return when field validation fails  */}
                             {errors.exampleRequired && <span>This field is required</span>}
-                            <input className="message__input" type="text" placeholder="Your Message" name="exampleRequired" ref={register({ required: true })} />
+                            <textarea className="message__input" type="text" placeholder="Your Message" name="exampleRequired" ref={register({ required: true })} />
                             {/* errors will return when field validation fails  */}
                             {errors.exampleRequired && <span>This field is required</span>}
                            

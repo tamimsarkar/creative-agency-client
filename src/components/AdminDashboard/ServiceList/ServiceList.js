@@ -4,7 +4,7 @@ import './ServiceList.css'
 const ServiceList = () => {
     const [totalOrder, setTotalOrder] = useState([])
     useEffect(() => {
-        fetch('http://localhost:4000/total-order')
+        fetch('https://fast-falls-01927.herokuapp.com/total-order')
             .then(res => res.json())
             .then(data => setTotalOrder(data))
 
