@@ -3,7 +3,6 @@ import { useForm } from "react-hook-form";
 import { Link, useHistory } from 'react-router-dom';
 import { ServiceContext, UserContext } from '../../../App';
 import './Orders.css'
-import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUpload } from '@fortawesome/free-solid-svg-icons'
 

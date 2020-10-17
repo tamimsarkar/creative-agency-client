@@ -2,6 +2,8 @@ import React from 'react';
 import { useState } from 'react';
 import './AddService.css'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faUpload } from '@fortawesome/free-solid-svg-icons'
 const ServiceList = () => {
     const [info, setInfo] = useState({});
     const [file, setFile] = useState(null);
@@ -53,14 +55,17 @@ const ServiceList = () => {
                         <input onBlur={handleBlur} type="text" name="service" placeholder="Enter service" id="exampleInputPassword1" />
 
                         <small>Description</small>
-                        <textarea onBlur={handleBlur} type="text" className="form-control" name="description" placeholder="Description" height="100px" id="exampleInputPassword1" />
+                        <textarea onBlur={handleBlur} type="text" className="form-control" name="description" placeholder="Description" height="150px" id="exampleInputPassword1" />
 
 
                     </div>
-                    <div className="col-md-6">
+                    <div className="col-md-6 d-flex flex-column">
                         <small className="" htmlFor="exampleInputPassword1">Icon</small>
-                        <input className="file" onChange={handleFileChange} type="file" id="exampleInputPassword1" placeholder="Picture" />
 
+                        <label className="custom-file-upload service__image" > <FontAwesomeIcon  icon={faUpload} /> <span>Upload Image</span>
+                        <input style={{border: "none", display:"none",  fontSize:'14px' ,width: "100%" }}  className="file-upload form-control" onChange={handleFileChange} type="file" id="exampleInputPassword1" />
+                    
+                    </label>
                     </div>
                     </div>
 

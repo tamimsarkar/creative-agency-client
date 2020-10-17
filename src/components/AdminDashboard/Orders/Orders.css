@@ -24,7 +24,7 @@ form > input  {
 }
 form > textarea {
     height: 100px !important;
-    width:350px;
+    width:350px !important;
     margin: 10px 0px;
     border: none;
     font-size:13px;

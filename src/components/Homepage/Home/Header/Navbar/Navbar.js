@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import { UserContext } from '../../../../../App';
 import logo from '../../../../../images/logos/logo.png'
 import './Navbar.css'
 const Navbar = () => {
+  const [loggedInUser, setLoggedInUser] = useContext(UserContext)
     return (
     <nav className="navbar navbar-expand-lg navbar-light">
     <div className="container">
@@ -25,9 +28,13 @@ const Navbar = () => {
       <li className="nav-item">
         <Link className="nav-link" to="/">Contact Us</Link>
       </li>
-      <li className="nav-item">
+      {
+        loggedInUser.name ? <li className="nav-item">
+        <Button className="nav-link login-btn" onClick={()=>setLoggedInUser({})}>LOGOUT</Button>
+      </li> : <li className="nav-item">
         <Link className="nav-link login-btn" to='/login'>Login</Link>
       </li>
+      }
       <li className="nav-item">
         <Link className="nav-link login-btn ml-2" to='/admin-dashboard'>Admin</Link>
       </li>

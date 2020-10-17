@@ -28,10 +28,10 @@ const AdminDashboard = () => {
     return (
         <div>
             <div className="logo_area">
-               <div className="d-flex justify-content-between align-items-center">
-               <Link to="/"><img  style={{height:'50px'}} className="dashboard__logo" src={logo} alt="" /></Link>
-               <h6>{loggedInUser.name}</h6>
-               </div>
+                <div className="d-flex justify-content-between align-items-center">
+                    <Link to="/"><img style={{ height: '50px' }} className="dashboard__logo" src={logo} alt="" /></Link>
+                    <h6>{loggedInUser.name}</h6>
+                </div>
             </div>
             <div className="user__dashboard">
                 <Router>
@@ -40,20 +40,20 @@ const AdminDashboard = () => {
 
                         <div className="sidebar__item">
                             {
-                                admin ?  <div style={{display: 'flex', flexDirection: 'column'}}> <Link className="side__item mt-2 mb-2" to="/admin-dashboard/service-list"> <FontAwesomeIcon icon={faList} />  Service List</Link>
+                                admin ? <div style={{ display: 'flex', flexDirection: 'column' }}> <Link className="side__item mt-2 mb-2" to="/admin-dashboard/service-list"> <FontAwesomeIcon icon={faList} />  Service List</Link>
 
                                     <Link className="side__item mt-2 mb-2" to='/admin-dashboard/add-service'> <FontAwesomeIcon icon={faPlus} /> Add Service</Link>
 
                                     <Link className="side__item mt-2 mb-2" to='/admin-dashboard/make-admin'> <FontAwesomeIcon icon={faUserPlus} /> Make Admin</Link>
                                 </div> :
 
-                                    <div style={{display: 'flex', flexDirection: 'column'}}>
+                                    <div style={{ display: 'flex', flexDirection: 'column' }}>
 
-                                        <Link className="side__item mt-2 mb-2" to="/user-dashboard/orders">  <FontAwesomeIcon icon={faShoppingCart} /> Orders</Link>
+                                        <Link className="side__item mt-2 mb-2" to="/admin-dashboard/orders">  <FontAwesomeIcon icon={faShoppingCart} /> Orders</Link>
 
-                                        <Link className="side__item mt-2 mb-2" to='/user-dashboard/ordered-services'> <FontAwesomeIcon icon={faList} />Ordered Service</Link>
+                                        <Link className="side__item mt-2 mb-2" to='/admin-dashboard/ordered-services'> <FontAwesomeIcon icon={faList} />Ordered Service</Link>
 
-                                        <Link className="side__item mt-2 mb-2" to='/user-dashboard/review'> <FontAwesomeIcon icon={faCommentAlt} /> Review</Link>
+                                        <Link className="side__item mt-2 mb-2" to='/admin-dashboard/review'> <FontAwesomeIcon icon={faCommentAlt} /> Review</Link>
 
                                     </div>
                             }
@@ -77,16 +77,16 @@ const AdminDashboard = () => {
                         </Route>
 
 
-                        <Route path='/user-dashboard/orders'>
+                        <Route path='/admin-dashboard/orders'>
                             <Orders />
                         </Route>
 
-                        <Route path='/user-dashboard/ordered-services'>
+                        <Route path='/admin-dashboard/ordered-services'>
                             <OrderedServices />
                         </Route>
 
 
-                        <Route path='/user-dashboard/review'>
+                        <Route path='/admin-dashboard/review'>
                             <AddReview />
                         </Route>
 

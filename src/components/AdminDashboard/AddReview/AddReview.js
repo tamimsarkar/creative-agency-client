@@ -60,7 +60,7 @@ const AddReview = () => {
                          <input onBlur={handleBlur} type="text" defaultValue={loggedInUser.name}  name="name" placeholder="Enter Name" />
                          <input onBlur={handleBlur} type="text" name="companyName" placeholder="Your Company Name.designation" />
                          <input onBlur={handleBlur} style={{display:'none'}} type="text" defaultValue={loggedInUser.photo} className="form-control" name="photo"  />
-                         <textarea onBlur={handleBlur} type="text"  name="description" placeholder="Description" height="100px" placeholder="Description" />
+                         <textarea style={{width:'320px !important'}} onBlur={handleBlur} type="text"  name="description" placeholder="Description" height="100px" placeholder="Description" />
                         
                          <button style={{width:'150px',backgroundColor:'#111430'}} type="submit" className="btn btn-success">Send</button>   
                          </form>

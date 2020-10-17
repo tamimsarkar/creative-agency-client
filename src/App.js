@@ -10,6 +10,7 @@ import Login from './components/Login/Login';
 import UserDashboard from './components/UserDashboard/UserDashboard';
 import AdminDashboard from './components/AdminDashboard/AdminDashboard';
 import PrivateRoute from './components/Login/PrivateRoute';
+import NotFound from './components/NotFound/NotFound';
 export const UserContext = createContext();
 export const ServiceContext = createContext();
 function App() {
@@ -35,6 +36,9 @@ function App() {
        <PrivateRoute path="/admin-dashboard">
          <AdminDashboard />
        </PrivateRoute>
+       {/* <Route path="*">
+         <NotFound />
+       </Route> */}
      </Switch>
    </Router>
 
