@@ -20,4 +20,4 @@ Admin will filter by his email.He can add new service see all orders & and make 
 ## User : 
 User can request for order an service,add review for perticular service and see list of his ordered list.
 <br />
-Thats all from this repository.
+<p>Thats all from this repository.</p>
